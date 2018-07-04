@@ -54,6 +54,6 @@ class MakeFilterCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\\' . config('filterable.namespace', 'Filters');
+        return config('filterable.namespace', $rootNamespace . '\\Http\\Filters');
     }
 }

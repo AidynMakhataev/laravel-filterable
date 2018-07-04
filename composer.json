@@ -1,6 +1,6 @@
 {
     "name": "aidynmakhataev/laravel-filterable",
-    "description": ":A laravel package to handle filtering by request query string",
+    "description": ":A laravel package to handle filtering by URL query strings",
     "license": "MIT",
     "authors": [
         {
