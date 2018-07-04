@@ -36,18 +36,18 @@ abstract class BaseFilter
      * Apply filter
      *
      * @param \Illuminate\Database\Eloquent\Builder $builder
-     * @return $this
+     * @return Builder
      */
     public function apply($builder)
     {
         $this->builder = $builder;
         foreach($this->filters() as $filter => $value) {
             if(method_exists($this, $filter)) {
-                $this->filter($value);
+                $this->$filter($value);
             }
         }
 
-        return $this;
+        return $this->builder;
     }
 
     /**
