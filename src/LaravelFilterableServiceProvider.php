@@ -3,6 +3,7 @@
 namespace AidynMakhataev\LaravelFilterable;
 
 use Illuminate\Support\ServiceProvider;
+use AidynMakhataev\LaravelFilterable\Commands\MakeFilterCommand;
 
 class LaravelFilterableServiceProvider extends ServiceProvider
 {
@@ -14,8 +15,9 @@ class LaravelFilterableServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/laravelfilterable.php' => config_path('laravelfilterable.php'),
+            __DIR__.'/../config/filterable.php' => config_path('filterable.php'),
         ], 'laravelfilterable.config');
+        
     }
 
     /**
@@ -25,6 +27,6 @@ class LaravelFilterableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-       
+        $this->commands(MakeFilterCommand::class);
     }
 }

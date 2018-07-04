@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use AidynMakhataev\LaravelFilterable\BaseFilter;
+
+class DummyClass extends BaseFilter
+{
+    //
+}
