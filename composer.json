@@ -1,0 +1,38 @@
+{
+    "name": "aidynmakhataev/laravel-filterable",
+    "description": ":A laravel package to handle filtering by request query string",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aidyn Makhataev",
+            "email": "makataev.7@gmail.com",
+            "homepage": "https://github.com/AidynMakhataev"
+        }
+    ],
+    "homepage": "https://github.com/aidynmakhataev/laravelfilterable",
+    "keywords": ["Laravel", "LaravelFilterable"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AidynMakhataev\\LaravelFilterable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AidynMakhataev\\LaravelFilterable\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AidynMakhataev\\LaravelFilterable\\LaravelFilterableServiceProvider"
+            ]
+        }
+    }
+}
