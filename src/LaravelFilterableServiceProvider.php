@@ -27,5 +27,5 @@ class LaravelFilterableServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands(MakeFilterCommand::class);
-    }   
+    }
 }
