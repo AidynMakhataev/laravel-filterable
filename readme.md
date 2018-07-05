@@ -42,7 +42,7 @@ Then, you need to define your filter logic by following this rules:
 - Query string without a corresponding filter method are ignored
 - Empty strings are ignored
 - The value of the each request keys are injected into the corresponding filter method
-- You are able to access the eloquent query builder instance by using $this->builder
+- You are able to access the eloquent query builder instance by using ```$this->builder```
 
 **Example**: <br>
 
@@ -131,11 +131,11 @@ MIT. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/aidynmakhataev/laravelfilterable.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/aidynmakhataev/laravelfilterable.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/aidynmakhataev/laravelfilterable/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://github.styleci.io/repos/139683973/shield
 
-[link-packagist]: https://packagist.org/packages/aidynmakhataev/laravelfilterable
-[link-downloads]: https://packagist.org/packages/aidynmakhataev/laravelfilterable
+[link-packagist]: https://packagist.org/packages/aidynmakhataev/laravel-filterable
+[link-downloads]: https://packagist.org/packages/aidynmakhataev/laravel-filterable
 [link-travis]: https://travis-ci.org/aidynmakhataev/laravelfilterable
-[link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/aidynmakhataev
+[link-styleci]: https://github.styleci.io/repos/139683973
+[link-author]: https://github.com/AidynMakhataev
 [link-contributors]: ../../contributors]

@@ -2,20 +2,21 @@
 
 namespace AidynMakhataev\LaravelFilterable;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
+
 
 abstract class BaseFilter
 {
     /**
-     * Eloquent Builder
+     * Eloquent Builder.
      *
      * @var Builder
      */
     protected $builder;
 
     /**
-     * Http Request
+     * Http Request.
      *
      * @var Request
      */
@@ -23,7 +24,7 @@ abstract class BaseFilter
 
 
     /**
-     * BaseFilter Constructor
+     * BaseFilter Constructor.
      *
      * @param Request $request
      */
@@ -33,7 +34,7 @@ abstract class BaseFilter
     }
 
     /**
-     * Apply filter
+     * Apply filter.
      *
      * @param \Illuminate\Database\Eloquent\Builder $builder
      * @return Builder
@@ -41,8 +42,8 @@ abstract class BaseFilter
     public function apply($builder)
     {
         $this->builder = $builder;
-        foreach($this->filters() as $filter => $value) {
-            if(method_exists($this, $filter)) {
+        foreach ($this->filters() as $filter => $value) {
+            if (method_exists($this, $filter)) {
                 $this->$filter($value);
             }
         }
@@ -51,7 +52,7 @@ abstract class BaseFilter
     }
 
     /**
-     * Get all filters from request
+     * Get all filters from request.
      *
      * @return array
      */
@@ -59,4 +60,5 @@ abstract class BaseFilter
     {
         return $this->request->all();
     }
+    
 }

@@ -43,7 +43,7 @@ class MakeFilterCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/filter.stub';
+        return __DIR__. '/../stubs/filter.stub';
     }
 
     /**
@@ -54,6 +54,7 @@ class MakeFilterCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return config('filterable.namespace', $rootNamespace . '\\Http\\Filters');
+        return config('filterable.namespace', $rootNamespace.'\\Http\\Filters');
     }
+    
 }

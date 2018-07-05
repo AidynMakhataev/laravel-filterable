@@ -9,7 +9,7 @@ trait Filterable
 {
     
     /**
-     * Scope for applying filters
+     * Scope for applying filters.
      *
      * @param Builder $query
      * @return Builder
@@ -17,12 +17,11 @@ trait Filterable
      */
     public function scopeFilter(Builder $query)
     {
-        if(!class_exists($this->filters)) {
+        if (!class_exists($this->filters)) {
             throw new \Exception('Filter Class '.$this->filters.' does not exist.');
         }
 
         return app()->make($this->filters)->apply($query);
     }
+    
 }
-
-

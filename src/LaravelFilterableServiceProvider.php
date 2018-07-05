@@ -16,8 +16,7 @@ class LaravelFilterableServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/filterable.php' => config_path('filterable.php'),
-        ], 'laravelfilterable.config');
-        
+        ], 'laravelfilterable.config');  
     }
 
     /**
@@ -29,4 +28,5 @@ class LaravelFilterableServiceProvider extends ServiceProvider
     {
         $this->commands(MakeFilterCommand::class);
     }
+    
 }
