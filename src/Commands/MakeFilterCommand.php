@@ -13,7 +13,6 @@ class MakeFilterCommand extends GeneratorCommand
      */
     protected $name = 'make:filter';
 
-
     /**
      * The name and signature of the console command.
      *
@@ -27,7 +26,6 @@ class MakeFilterCommand extends GeneratorCommand
      * @var string
      */
     protected $description = 'Create a new filter class';
-
 
     /**
      * The type of class being generated.
@@ -43,7 +41,7 @@ class MakeFilterCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__. '/../stubs/filter.stub';
+        return __DIR__.'/../stubs/filter.stub';
     }
 
     /**
@@ -56,5 +54,4 @@ class MakeFilterCommand extends GeneratorCommand
     {
         return config('filterable.namespace', $rootNamespace.'\\Http\\Filters');
     }
-    
 }

@@ -4,10 +4,8 @@ namespace AidynMakhataev\LaravelFilterable;
 
 use Illuminate\Database\Eloquent\Builder;
 
-
 trait Filterable
 {
-    
     /**
      * Scope for applying filters.
      *
@@ -17,11 +15,10 @@ trait Filterable
      */
     public function scopeFilter(Builder $query)
     {
-        if (!class_exists($this->filters)) {
+        if (! class_exists($this->filters)) {
             throw new \Exception('Filter Class '.$this->filters.' does not exist.');
         }
 
         return app()->make($this->filters)->apply($query);
     }
-    
 }

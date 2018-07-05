@@ -5,7 +5,6 @@ namespace AidynMakhataev\LaravelFilterable;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
 
-
 abstract class BaseFilter
 {
     /**
@@ -21,7 +20,6 @@ abstract class BaseFilter
      * @var Request
      */
     protected $request;
-
 
     /**
      * BaseFilter Constructor.
@@ -60,5 +58,4 @@ abstract class BaseFilter
     {
         return $this->request->all();
     }
-    
 }
