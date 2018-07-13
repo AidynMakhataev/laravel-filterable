@@ -9,7 +9,7 @@
             "homepage": "https://github.com/AidynMakhataev"
         }
     ],
-    "homepage": "https://github.com/aidynmakhataev/laravelfilterable",
+    "homepage": "https://github.com/aidynmakhataev/laravel-filterable",
     "keywords": ["Laravel", "LaravelFilterable"],
     "require": {
         "illuminate/support": "~5"
